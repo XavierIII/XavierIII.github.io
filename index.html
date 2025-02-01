@@ -3,109 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Software Engineer (AI/ML) | Data Engineer | Value Investor">
-    <meta name="keywords" content="AI, Machine Learning, Data Engineering, Software Development, Portfolio">
-    <meta property="og:title" content="Your Name - Portfolio">
-    <meta property="og:description" content="Explore my projects and experience in AI, Machine Learning and Data Engineering.">
-    <meta property="og:image" content="your-profile-image.jpg">
     <title>Alazare Bati - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
     <style>
-        /* Floating Animation */
-        .floating {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        /* Profile Image */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-        }
-        /* Skill Bars */
-        .skill-bar {
-            height: 8px;
-            background-color: #4a90e2;
-            width: 0;
-            transition: width 2s ease-in-out;
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white font-[Poppins] transition-all duration-300">
-    <button id="theme-toggle" class="fixed top-4 right-4 p-2 bg-gray-800 rounded-full text-white hover:bg-gray-700 transition-transform transform hover:scale-110">
-        <i class="fas fa-moon"></i>
-    </button>
-    
-    <section class="h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden floating">
-        <div class="absolute inset-0 bg-transparent bg-opacity-20 backdrop-blur-lg rounded-lg"></div>
-        <img src="IMG_0920.jpg" alt="Alazare Bati" class="profile-img mb-4">
-        <h1 class="text-5xl font-bold mb-4 animate-fade-in z-10" id="typing-text"></h1>
-        <p class="text-xl mb-6 z-10">Software Engineer (AI/ML) | Data Engineer | Value Investor</p>
-        <a href="#projects" class="px-6 py-3 bg-blue-600 rounded-full text-lg font-semibold hover:bg-blue-500 transition animate-bounce z-10">See My Work</a>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800 py-4 px-6 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Alazare Bati</h1>
+            <div class="space-x-6">
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+        <h1 class="text-5xl font-bold mb-4 animate-fadeIn">Hi, I'm Alazare Bati</h1>
+        <p class="text-xl mb-6">Software Engineer (AI/ML) | Data Engineer </p>
+        <a href="#projects" class="px-6 py-3 bg-blue-600 rounded-full text-lg font-semibold hover:bg-blue-500 transition">See My Work</a>
     </section>
-    
-    <section id="projects" class="py-16 px-6 text-center bg-gradient-to-r from-blue-500 to-indigo-600 relative overflow-hidden">
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 text-center">
         <h2 class="text-4xl font-bold mb-8">My Projects</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-110 hover:rotate-2 lazy-load">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-3">AI Market Analysis</h3>
                 <p class="text-gray-400">Developed an AI-driven small-cap stock analysis tool.</p>
-                <a href="https://github.com/yourusername/ai-market-analysis" class="text-blue-400 hover:text-blue-300 text-sm">View Repository</a>
+                <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-500">View Project</a>
+                <a href="https://github.com/yourusername/ai-market-analysis" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-3">Legal AI Chatbot</h3>
+                <p class="text-gray-400">Built a chatbot using RASA for legal document review.</p>
+                <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-500">View Project</a>
+                <a href="https://github.com/yourusername/legal-ai-chatbot" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-3">Real Estate Buy Box</h3>
+                <p class="text-gray-400">Automated property analysis and deal screening tool.</p>
+                <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-500">View Project</a>
+                <a href="https://github.com/yourusername/real-estate-buy-box" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
             </div>
         </div>
     </section>
-    
-    <section class="py-16 px-6 text-center">
-        <h2 class="text-4xl font-bold mb-8">Skills</h2>
-        <div class="max-w-3xl mx-auto">
-            <p class="text-lg">Python</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="skill-bar bg-blue-500 h-2.5 rounded-full" style="width: 90%;"></div>
-            </div>
-            <p class="text-lg">Machine Learning</p>
-            <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
-                <div class="skill-bar bg-blue-500 h-2.5 rounded-full" style="width: 80%;"></div>
-            </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+        <p class="text-lg mb-6">Let's collaborate on exciting projects! Feel free to connect.</p>
+        <div class="flex justify-center space-x-6 text-3xl">
+            <a href="https://github.com/yourusername" class="hover:text-blue-400 transition transform hover:scale-110"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" class="hover:text-blue-400 transition transform hover:scale-110"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:youremail@example.com" class="hover:text-blue-400 transition transform hover:scale-110"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
-    
-    <script>
-        const text = "Hi, I'm Alazare Bati";
-        let index = 0;
-        function typeEffect() {
-            if (index < text.length) {
-                document.getElementById("typing-text").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 100);
-            }
-        }
-        document.addEventListener("DOMContentLoaded", typeEffect);
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute("href")).scrollIntoView({
-                    behavior: "smooth"
-                });
-            });
-        });
-
-        const themeToggle = document.getElementById("theme-toggle");
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("bg-gray-100");
-            document.body.classList.toggle("text-black");
-            localStorage.setItem("theme", document.body.classList.contains("bg-gray-100") ? "light" : "dark");
-        });
-    </script>
 </body>
 </html>
