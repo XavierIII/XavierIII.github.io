@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alazare Bati - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .animate-fadeIn {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800 py-4 px-6 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Alazare Bati</h1>
+            <div class="space-x-6">
+                <a href="#projects" class="hover:text-blue-400">Projects</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+         <img src="https://raw.githubusercontent.com/XavierIII/XavierIII.github.io/main/IMG_0920.jpg" alt="Alazare Bati" class="w-40 h-40 rounded-full mb-4 shadow-lg object-cover object-center hover-effect">
+        <h1 class="text-5xl font-bold mb-4 animate-fadeIn">Hi, I'm Alazare Bati</h1>
+        <p class="text-xl mb-6">Software Engineer (AI/ML) | Data Engineer </p>
+        <a href="#projects" class="px-6 py-3 bg-blue-600 rounded-full text-lg font-semibold hover:bg-blue-500 transition hover-effect">See My Work</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">My Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-effect">
+                <h3 class="text-2xl font-semibold mb-3">AI Market Analysis</h3>
+                <p class="text-gray-400">Developed an AI-driven small-cap stock analysis tool.</p>
+                <a href="https://github.com/yourusername/ai-market-analysis" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-effect">
+                <h3 class="text-2xl font-semibold mb-3">Legal AI Chatbot</h3>
+                <p class="text-gray-400">Built a chatbot using RASA for legal document review.</p>
+                <a href="https://github.com/yourusername/legal-ai-chatbot" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover-effect">
+                <h3 class="text-2xl font-semibold mb-3">Real Estate Buy Box</h3>
+                <p class="text-gray-400">Automated property analysis and deal screening tool.</p>
+                <a href="https://github.com/yourusername/real-estate-buy-box" class="ml-4 text-blue-400 hover:text-blue-300">GitHub Repo</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hobbies and Interests Section -->
+    <section id="hobbies" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Hobbies & Interests</h2>
+        <p class="text-lg">I enjoy learning new AI/ML techniques, soccer, astronomy, and researching new open source projects.</p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Certifications</h2>
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AlazareBati-6765/DC34FA80EB790C19?sharingId=9B76AA11C198806E" class="text-blue-400 hover:text-blue-300">Microsoft Certified: Azure AI Engineer Associate</a>
+        <br>
+        <a href="https://learn.microsoft.com/en-us/users/alazarebati-6765/credentials/c9ba5bc8a99f53a3" class="text-blue-400 hover:text-blue-300">Microsoft Certified: Azure Data Scientist Associate</a>
+        <br>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/7WLU8JRYT9C7" class="text-blue-400 hover:text-blue-300">Machine Learning Specialization</a>
+        <br>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/VM6LURBMZH4H" class="text-blue-400 hover:text-blue-300">Duke University: MLOps | Machine Learning Operations</a>
+    </section>
+
+    <!-- Patents Section -->
+    <section id="patents" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Patents</h2>
+        <p class="text-lg">Patent Pending: AI-Based Document Classification System</p>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Volunteering</h2>
+        <p class="text-lg">Mentor at AI4Good Foundation | Volunteer at Local Coding Bootcamp</p>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+        <p class="text-lg mb-6">Let's collaborate on exciting projects! Feel free to connect.</p>
+        <div class="flex justify-center space-x-6 text-3xl">
+            <a href="https://github.com/XavierIII" class="hover:text-blue-400 transition transform hover:scale-110 hover-effect"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alazare-bati-a2ba54116" class="hover:text-blue-400 transition transform hover:scale-110 hover-effect"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:alazar.2800@gmail.com" class="hover:text-blue-400 transition transform hover:scale-110 hover-effect"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+</body>
+</html>
