@@ -39,5 +39,5 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 **Contact**
-For any inquiries or feedback, you can reach out to XavierIII via email@example.com.
+For any inquiries or feedback, you can reach out to XavierIII via alazar.2800@gmail.com.
   
